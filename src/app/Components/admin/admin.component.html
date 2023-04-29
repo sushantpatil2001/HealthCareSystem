@@ -1,0 +1,45 @@
+<app-admin-navbar>
+    <div class="welcome">Welcome Admin</div>
+  </app-admin-navbar>
+  
+  <!DOCTYPE html>
+  <html>
+  
+  <head>
+      <title>Admin Home</title>
+      <link rel="stylesheet" type="text/css" href="admin.component.css">
+  </head>
+  
+  <body>
+      <div class="container">
+          <h2>Appointments</h2>
+          <table>
+              <thead>
+                  <tr>
+                      <th>User Name</th>
+                      <th>Center Name</th>
+                      <th>Test Name</th>
+                      <th>DOA</th>
+                      <th>Appointment Status</th>
+                      
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let item of appointments">
+                      <td>{{item.custName}}</td>
+                      <td>{{item.diagCenName}}</td>
+                      <td>{{item.test}}</td>
+                      <td>{{item.doa | date:'yyyy-MM-dd'}}</td>
+                      <!-- <td>{{item.status}}</td> -->
+                      <td><button class="approve">Approve</button></td>
+                      <td><button class="reject">Reject</button></td>
+                  </tr>
+                  <!--  -->
+                  <!-- Add more rows as needed -->
+              </tbody>
+          </table>
+      </div>
+  </body>
+  
+  </html>
+  

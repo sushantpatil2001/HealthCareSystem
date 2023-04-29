@@ -1,0 +1,52 @@
+<app-navbar></app-navbar>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Book Now</title>
+	<link rel="stylesheet" type="text/css" href="appointment.component.css">
+</head>
+
+<body>
+	<div class="container">
+		<img src="https://hospital.mvrayurveda.com/wp-content/uploads/2021/11/Online-Doctor.3b3bcd87.gif" class="img">
+		<form #myForm="ngForm" (ngSubmit)="myForm.form.valid && submit(myForm)">
+			<h2>Book Appointment</h2>
+			<input type="text" name="userName" placeholder="Your Name" class="box">
+
+			<!-- [(ngModel)]="diagName" [ngModelOptions]="{ standalone: true }" -->
+
+
+			<!-- SP -->
+				<!-- <select class="box" [(ngModel)]="selected" (change)="onSelect($event)">
+					<option value="" selected disabled>Select Diagnostic Center</option>
+					
+					<option *ngFor="let item of DiagCenName" [value]="item.diagCenId">{{item.diagCenName}}</option>
+				</select> -->
+			<!-- SP -->
+
+				<select class="box" name="diagcenName" >
+					<option value="" selected disabled>Select Diagnostic Center</option>
+					<!-- <option [value]="id">{{DiagCenName}}</option> -->
+					<!-- <option value="center2">Diagnostic Center 2</option>
+					<option value="center3">Diagnostic Center 3</option> -->
+					<option *ngFor="let item of DiagCenName" [value]="item.diagCenId">{{item.diagCenName}}</option>
+				</select>
+
+				<!-- (change)="getTestsByCenters()" [(ngModel)]="diagCenId" -->
+				<select class="box" name="diagtestName">
+					<option value="" selected disabled>Select Test</option>
+					<!-- <option value="test1">Test 1</option>
+					<option value="test2">Test 2</option>
+					<option value="test3">Test 3</option> -->
+					<option *ngFor="let item of testName" [value]="item.testName">{{item.testName}}</option>
+				</select>
+			
+
+			<input type="date" class="box">
+			<input type="submit" value="Book Now" class="btn">
+		</form>
+	</div>
+</body>
+
+</html>

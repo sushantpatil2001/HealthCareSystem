@@ -1,0 +1,110 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 15px;
+}
+
+h2 {
+	margin-bottom: 20px;
+} 
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+  font-size: 20px;
+}
+
+th, td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #3f9642;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+.welcome {
+	margin-right: 20px;
+	font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    border-color: #3f9642;
+   
+  }
+  
+  table th,
+  table td {
+    text-align: left;
+    padding: 12px;
+    border-color: #3f9642;
+  }
+  
+  table th {
+    background-color: #e2dede;
+    border-color: #3f9642;
+  }
+  
+  /* table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+    
+  } */
+  
+  table tbody tr:hover {
+    background-color: #e2dede;
+    border-color: #3f9642;
+  }
+  
+  button {
+    background-color: #3f9642;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 4px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  button.approve {
+    background-color: #3f9642;
+    color: white;
+    font-size: 20px;
+  }
+  
+  button.reject {
+    background-color: rgb(207, 48, 48);
+    color: white;
+    font-size: 20px;
+  }
+  
+
+  table, th, td{
+    border: 3px solid #3f9642;
+  }
+
+  tbody{
+    font-size: 20px;
+  }
+
+  thead{
+    font-size: 25px;
+  }
+  
+  

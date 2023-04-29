@@ -1,0 +1,55 @@
+/* .container-fluid{
+    background-color: #3f9642;
+    
+}
+
+.navbar-brand{
+    color: black;
+    text-size-adjust: 10px;
+}
+
+.nav-link{
+    color: black;
+} */
+
+/* Style for navbar brand */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Style for navbar links */
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid transparent;
+  }
+  
+  /* Style for active navbar link */
+  .navbar-nav .nav-link.active {
+    background-color: #e60808;
+    color: #000;
+    border-color: #000;
+  }
+  
+  /* Style for navbar background */
+  .navbar {
+    background-color: #3f9642;
+  }
+
+  .nav-item {
+    color: white;
+    font-size: 25px;
+    
+    margin: 0;
+}
+
+.nav-item .h3{
+    font-weight: bold;
+}
+  
